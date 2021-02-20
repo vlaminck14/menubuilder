@@ -79,6 +79,10 @@ body {
     
 }
 
+.menu__page > h3 {
+font-size: 12px;
+}
+
 .menu__page > img {
     margin-top: 5px;
     opacity: 0.8;
