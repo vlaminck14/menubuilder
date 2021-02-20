@@ -16,6 +16,13 @@ const menu = [
         desc_bl: 'Lorem ipsum dolar sit in spanish'
     },
     {   
+        item: 'Garlic',
+        price: 20, 
+        desc_en: 'Lorem ipsum dolar sit in english. This is awkwared to write random words just to fill the spaces for testing purposes.', 
+        desc_fr: 'Lorem ipsum dolar sit in french. This is awkwared to write random words just to fill the spaces for testing purposes.', 
+        desc_bl: 'Lorem ipsum dolar sit in spanish'
+    },
+    {   
         item: 'Sausage',
         price: 10, 
         desc_en: 'Lorem ipsum dolar sit in english. This is awkwared to write random words just to fill the spaces for testing purposes.', 
