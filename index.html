@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js" defer></script>
     <script src="app.js" defer></script>
-    <title>Vlaminck Menu Builder</title>
+    <title>Print Menu</title>
 </head>
 <body >
     <div class="main__container" id="app">
@@ -15,18 +15,18 @@
             <div class="menu__header">
                <div class="menu__page">
                    <h3>Page: {{ menu[0].page }}</h3>
-                   <img src='/logo.png' width='180' height='90' />
+                   <img src='images/logo.png' width='180' height='90' />
             </div>
                 <div class="menu__logo">
                     <h1>Vlaminck</h1>
-                    <img src='/menu.png' height='100' width='230'/>
+                    <img src='images/menu.png' height='100' width='230'/>
                     
                 </div>
                 
                 <div class="menu__flags">
-                    <img width='50' height="30" src='/flag1.jpg'/>
-                    <img width='50' height="30" src='/flag2.jpg'/>
-                    <img width='50' height="30" src='/flag3.jpg'/>
+                    <img width='50' height="30" src='/images/flag1.jpg'/>
+                    <img width='50' height="30" src='/images/flag2.jpg'/>
+                    <img width='50' height="30" src='/images/flag3.jpg'/>
                 </div>
             </div>
     <!-- category -->
@@ -38,25 +38,25 @@
 <!-- Menu contents -->
             <div class="menu__box" v-for="items in menu">
                 <div class="menu__title">
-                    <h2>{{ items.item }}</h2>
-                    <hr>
+                    <!-- <h2>{{ items.item }}</h2>
+                    <hr> -->
                 <div class="menu__description">
-                    <div class="description__bl">
-                       <p><img src='/flag1.jpg' width='20' height='14'/> {{ items.desc_bl }}</p> 
+                    <div class="description__nl">
+                       <p><img src='images/flag1.jpg' width='20' height='14'/> {{ items.desc_fr }}</p> 
                     </div>
                     <hr style='opacity: 0.2;'>
-                    <div class="description__nl">
-                        <p><img src='/flag2.jpg' width='20' height='14'/> {{ items.desc_nl }}</p>
+                    <div class="description__fr">
+                        <p><img src='images/flag2.jpg' width='20' height='14'/> {{ items.desc_bl }}</p>
                     </div>
                     <hr style='opacity: 0.2;'>
                     <div class="description__en">
-                        <p><img src='/flag3.jpg' width='20' height='14'/> {{ items.desc_en }}</p>
+                        <p><img src='images/flag3.jpg' width='20' height='14'/> {{ items.desc_en }}</p>
                     </div>
                 </div>
             </div>
                 <div class="menu__price">
                     <h2>€ {{ items.price }}</h2>
-                    <hr>
+                    
                 </div>
                 
             </div>
